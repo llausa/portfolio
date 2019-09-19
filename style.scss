@@ -85,7 +85,9 @@ footer p {
 
 /* TABLETS PORTRAIT */
 @media only screen and (min-width: 768px) {
-
+  .menu-wrap .menu > div > div > ul {
+    padding-left: 0;
+  }
 
 }
 
