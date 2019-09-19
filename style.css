@@ -72,6 +72,12 @@ footer p {
 }
 
 /* EVERYTHING MOBILE */
+@media screen and (max-width: 767px) {
+  .menu-wrap .menu > div > div > ul {
+    padding-left: 0;
+  }
+}
+
 /* TABLETS PORTRAIT */
 /* TABLET LANDSCAPE / DESKTOP */
 /*# sourceMappingURL=style.css.map */

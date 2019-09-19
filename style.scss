@@ -78,8 +78,8 @@ footer p {
 
 /* EVERYTHING MOBILE */
 @media screen and (max-width: 767px) {
-  #menu {
-
+  .menu-wrap .menu > div > div > ul {
+    padding-left: 0;
   }
 }
 

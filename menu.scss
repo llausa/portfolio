@@ -26,6 +26,7 @@
   width: 30px;
   height: 60px;
   padding: 1rem;
+  padding-right: 2rem;
   background: $bkgd_color;
   display: flex;
   align-items: center;
@@ -38,7 +39,7 @@
   flex: none;
   width: 100%;
   height: 2px;
-  background: white;
+  background: $link_color;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -128,7 +129,7 @@
 
 .menu-wrap .menu > div > div > ul >li {
   list-style: none;
-  color: white;
+  color:$link_color;
   font-size: 1.5rem;
   padding: 1rem;
 }
