@@ -1,11 +1,50 @@
+@import "colors";
+
 html {
   background-color: #041b2d;
+  font-family: 'Lato', sans-serif;
 }
 
-h1 {
-  color: white;
+h1, h2, h3, h4 {
+  color: $headings_color;
 }
 
-i {
-  color: white;
+nav {
+  color: $text_color;
+}
+
+i, a {
+  color: $link_color;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+p {
+  color: $text_color;
+}
+
+footer p {
+  color: $headings_color;
+}
+
+/* EVERYTHING MOBILE */
+@media screen and (max-width: 767px) {
+  #menu {
+
+  }
+}
+
+/* TABLETS PORTRAIT */
+@media only screen and (min-width: 768px) {
+
+
+}
+
+/* TABLET LANDSCAPE / DESKTOP */
+@media only screen and (min-width: 1024px) {
+
+
 }
