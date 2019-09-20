@@ -291,6 +291,15 @@ footer {
   .content-title-wrap .content-text-wrap p {
     margin-bottom: 0.5rem;
   }
+  .content-title-wrap .content-text-wrap .article-title {
+    margin-bottom: 0;
+  }
+  .content-title-wrap .content-text-wrap .article-preview {
+    margin: 0;
+  }
+  .content-title-wrap .content-text-wrap .article-date {
+    margin: 0;
+  }
   .content-title-wrap .content-text-wrap .content-social-wrap {
     font-size: 11vw;
   }
