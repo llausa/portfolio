@@ -1,3 +1,178 @@
+.menu-wrap {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.menu-wrap .toggler {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  margin-right: 2rem;
+  margin-top: 2rem;
+  opacity: 0;
+}
+
+.menu-wrap .hamburger {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  width: 30px;
+  height: 60px;
+  padding: 1rem;
+  padding-right: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.menu-wrap .hamburger > div {
+  position: relative;
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+  width: 100%;
+  height: 2px;
+  background: #428cd4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.menu-wrap .hamburger > div:before,
+.menu-wrap .hamburger > div:after {
+  content: '';
+  position: absolute;
+  z-index: 1;
+  top: -10px;
+  width: 100%;
+  height: 2px;
+  background: inherit;
+}
+
+.menu-wrap .hamburger > div:after {
+  top: 10px;
+}
+
+.menu-wrap .toggler:checked + .hamburger > div {
+  -webkit-transform: rotate(135deg);
+          transform: rotate(135deg);
+}
+
+.menu-wrap .toggler:checked + .hamburger > div:before,
+.menu-wrap .toggler:checked + .hamburger > div:after {
+  top: 0;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.menu-wrap .toggler:checked:hover + .hamburger > div {
+  -webkit-transform: rotate(225deg);
+          transform: rotate(225deg);
+}
+
+.menu-wrap .toggler:checked ~ .menu {
+  visibility: visible;
+}
+
+.menu-wrap .toggler:checked ~ .menu > div {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition-duration: 0.75s;
+          transition-duration: 0.75s;
+}
+
+.menu-wrap .toggler:checked ~ .menu > div > div {
+  opacity: 1;
+  -webkit-transition: opacity 0.4s ease;
+  transition: opacity 0.4s ease;
+}
+
+.menu-wrap .menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  visibility: hidden;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.menu-wrap .menu > div {
+  background: #041b2d;
+  border-radius: 50%;
+  width: 200vw;
+  height: 200vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.menu-wrap .menu > div > div {
+  text-align: center;
+  max-width: 90vw;
+  max-height: 100vh;
+  opacity: 0;
+  -webkit-transition: opacity 0.4s ease;
+  transition: opacity 0.4s ease;
+}
+
+.menu-wrap .menu > div > div > ul > li {
+  list-style: none;
+  color: #428cd4;
+  font-size: 1.5rem;
+  padding: 1rem;
+}
+
+.menu-wrap .menu > div > div > ul > li > a {
+  color: inherit;
+  text-decoration: none;
+  -webkit-transition: color 0.4s ease;
+  transition: color 0.4s ease;
+}
+
 html {
   background-color: #041b2d;
   font-family: 'Lato', sans-serif;
@@ -28,53 +203,81 @@ footer p {
   color: white;
 }
 
-.navbar {
-  font-size: 18px;
-  background-image: linear-gradient(260deg, #2376ae 0%, #c16ecf 100%);
-  border: 1px solid rgba(0, 0, 0, 0.2);
-  padding-bottom: 10px;
+body {
+  margin: 0;
 }
 
-.main-nav {
-  list-style-type: none;
-  display: none;
-}
-
-.nav-links,
-.logo {
-  text-decoration: none;
-  color: rgba(255, 255, 255, 0.7);
-}
-
-.main-nav li {
-  text-align: center;
-  margin: 15px auto;
-}
-
-.logo {
-  display: inline-block;
-  font-size: 22px;
-  margin-top: 10px;
-  margin-left: 20px;
-}
-
-.navbar-toggle {
+footer {
   position: absolute;
-  top: 10px;
-  right: 20px;
-  cursor: pointer;
-  color: rgba(255, 255, 255, 0.8);
-  font-size: 24px;
-}
-
-.active {
-  display: block;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;
+  text-align: center;
 }
 
 /* EVERYTHING MOBILE */
 @media screen and (max-width: 767px) {
+  .page-container {
+    position: relative;
+    min-height: 100vh;
+  }
   .menu-wrap .menu > div > div > ul {
     padding-left: 0;
+  }
+  nav {
+    height: 10vh;
+  }
+  main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .title-wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    font-size: 11vw;
+    margin: 1rem;
+    top: 15vh;
+  }
+  .title-wrap .first-name {
+    top: 0.9em;
+    margin: 0;
+    position: relative;
+  }
+  .title-wrap .last-name {
+    position: relative;
+    margin: 0;
+    -webkit-writing-mode: vertical-lr;
+        -ms-writing-mode: tb-lr;
+            writing-mode: vertical-lr;
+    white-space: nowrap;
+    left: -3.5em;
+  }
+  .title-wrap .content-text-wrap {
+    position: absolute;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    top: 40vw;
+    left: 30vw;
+    font-size: 7vw;
+    width: 60vw;
+  }
+  .title-wrap .content-text-wrap p {
+    margin-bottom: 0.5rem;
+  }
+  .title-wrap .content-text-wrap .content-social-wrap {
+    font-size: 11vw;
   }
 }
 

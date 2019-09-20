@@ -13,8 +13,10 @@
   right: 0;
   z-index: 2;
   cursor: pointer;
-  width: 50px;
-  height: 50px;
+  width: 30px;
+  height: 30px;
+  margin-right: 2rem;
+  margin-top: 2rem;
   opacity: 0;
 }
 
@@ -27,7 +29,6 @@
   height: 60px;
   padding: 1rem;
   padding-right: 2rem;
-  background: $bkgd_color;
   display: flex;
   align-items: center;
   justify-content: center;
