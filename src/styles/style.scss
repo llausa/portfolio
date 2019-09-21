@@ -56,7 +56,11 @@ footer {
 @media screen and (max-width: 767px) {
 	.menu-wrap .menu > div > div > ul {
 		padding-left: 0;
-	}
+  }
+
+  a {
+    color: $link_color;
+  }
 
 	nav {
 		height: 10vh;
@@ -116,10 +120,14 @@ footer {
 
 			p {
 				margin-bottom: 0.5rem;
-			}
+      }
+
+      .content-text-wrap > .article-title {
+        color: $link_color;
+      }
 
 			.article-title {
-				margin-bottom: 0;
+        margin-bottom: 0;
 			}
 
 			.article-preview {
