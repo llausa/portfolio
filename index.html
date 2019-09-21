@@ -1,19 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
+		<!-- This code gets repeated for each page ~> could be placed in a header partial of Rails -->
+		<!-- Init meta tags -->
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<!-- Importing Style Sheet where bulk of CSS is -->
 		<link
 			rel="stylesheet"
 			href="src/styles/style.css"
 			integrity="sha384-Jl4l//bFnl9ylGWOLQeKz2mONln2BVXeFkn5Yy/5cNzC+/yaeHIavhR+/hlsduET"
 		/>
+		<!-- Social Icons imported from Font Awesome ~> a little bit slow to load, could be bc of SRI? -->
 		<script
 			src="https://kit.fontawesome.com/81317c1b19.js"
 			crossorigin="anonymous"
 			integrity="sha384-tCIa9x35rFwAnPYwDCoqImEiB9Ai31jfzeslK4Q53KZAXSFi24Px912eIpefo9Bj"
 		></script>
+		<!-- Importing Lato font from Google Fonts ~> Google Fonts does not support SRI -->
 		<link
 			href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap"
 			rel="stylesheet"
@@ -22,14 +27,18 @@
 	</head>
 
 	<body>
+		<!-- Nav hamburger of menu across the site -->
 		<nav>
 			<div class="menu-wrap">
+				<!-- utilizing the checkbox input style so it can be pure css -->
 				<input type="checkbox" class="toggler" />
+				<!-- Hamburger icon over the checkbox input -->
 				<div class="hamburger"><div></div></div>
 				<div class="menu">
 					<div>
 						<div>
 							<ul>
+								<!-- links to different pages -->
 								<li><a href="index.html" class="nav-links">Home</a></li>
 								<li><a href="./src/now.html" class="nav-links">Now</a></li>
 								<li><a href="./src/about.html" class="nav-links">About</a></li>
@@ -43,13 +52,17 @@
 				</div>
 			</div>
 		</nav>
-
+		<!-- Main content of site inside this main tag -->
 		<main>
+			<!-- title-wrap contains everything incl the big name and content underneath it -->
 			<div class="title-wrap">
 				<h1 class="first-name">Santiago</h1>
+				<!-- &nbsp; is what allows Ch  mon the extra blank space between h and m -->
 				<h1 class="last-name">Ch &nbsp;&nbsp; mon</h1>
+				<!-- content underneath title located here -->
 				<div class="content-text-wrap">
 					<p>is a Software Developer in Brisbane, Australia</p>
+					<!-- social icons for index page -->
 					<div class="content-social-wrap">
 						<a
 							href="https://www.linkedin.com/in/santiagochamon/"

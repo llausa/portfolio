@@ -1,15 +1,21 @@
-@import "colors";
-@import "menu";
+// Main Style page holding all of the scss/css that is used in the project
 
+// Importing scss partials for colors and menu
+@import "./colors";
+@import "./menu";
+
+// setting background color and fonts for the entire site
 html {
 	background-color: $bkgd_color;
 	font-family: "Lato", sans-serif;
 }
 
+// getting rid of overflow along the x-axis
 body {
   overflow-x: hidden;
 }
 
+// setting heading colors based on color partial variables
 h1,
 h2,
 h3,
@@ -17,21 +23,25 @@ h4 {
 	color: $headings_color;
 }
 
+// color for text in nav
 nav {
 	color: $text_color;
 }
 
+// color of icons and links
 i,
 a {
 	color: $link_color;
 	text-decoration: none;
 }
 
+// what mouse looks like when a link is hovered on
 a:hover {
 	text-decoration: underline;
 	cursor: pointer;
 }
 
+// color for text across entire site set to var from colors partial
 p {
 	color: $text_color;
 }
@@ -40,10 +50,12 @@ footer p {
 	color: $headings_color;
 }
 
+// removed margin for body tag
 body {
 	margin: 0;
 }
 
+// footer comment ~> cannot delete css
 footer {
 	position: absolute;
 	bottom: 0;
@@ -54,14 +66,17 @@ footer {
 
 /* EVERYTHING MOBILE */
 @media screen and (max-width: 767px) {
+	// aligning menu links to the middle
 	.menu-wrap .menu > div > div > ul {
 		padding-left: 0;
   }
 
+	// color values set for link
   a {
     color: $link_color;
   }
 
+	// nav height set to 10% of screen
 	nav {
 		height: 10vh;
 	}
@@ -70,7 +85,8 @@ footer {
 		display: flex;
 		flex-direction: column;
 	}
-
+	// css for all pages minus index.html for mobile responsiveness
+	// position for Santiago, Chamon and content block set here
 	.content-title-wrap {
 		display: flex;
 		position: relative;
@@ -143,7 +159,7 @@ footer {
 			}
 		}
 	}
-
+	// css for index.html page in mobile screen set here
 	.title-wrap {
 		display: flex;
 		position: relative;
@@ -186,6 +202,8 @@ footer {
 }
 
 /* TABLETS PORTRAIT */
+// see comments in mobile responsiveness for explanation of css here
+// only position values changed to position content in right place for tablets
 @media only screen and (min-width: 768px) {
 	.menu-wrap .menu > div > div > ul {
 		padding-left: 0;
@@ -302,6 +320,8 @@ footer {
 }
 
 /* TABLET LANDSCAPE / DESKTOP */
+// see comments in mobile responsiveness for explanation of css here
+// only position values changed to position content in right place for tablets
 @media only screen and (min-width: 1024px) {
 
 	.title-wrap {
