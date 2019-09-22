@@ -21,22 +21,21 @@
 ## Functionality / features
   This site has three main components: 1) the hamburger menu, 2) the index/splash page and 3) the content pages.
 
-  The hamburger menu appears on all pages of the site. It is a responsive, pure css solution, that let's users
+  The hamburger menu appears on all pages of the site. It is a responsive, pure css solution, that lets users
   navigate between all the different pages in a seamless way. A user visiting the site will be taken to the
   splash/index page where they can then either follow the social icons or click on the hamburger menu.
   The hamburger menu, once clicked, expands and shows the different pages a user can visit.
-  The menu expands to encompass the whole screen. and lists out all options in a repsonsive way (menu items
+  The menu expands to encompass the whole screen and lists out all options in a repsonsive way (menu items
   will always be in the middle regardless of screen size of device type).
 
-  The Index/splash (index.html) page has it's own structure and looks different than all other pages. It is the very first page that a User sees when they follow the home link to the website. This page has a different structure
-  to all other pages. It will display my first name and last name, along with some introductory text and social
+  The Index/splash (index.html) page has it's own structure and looks different than all other pages. It is the very first page that a User sees when they follow the home link to the website. This page will display my first name and last name, along with some introductory text and social
   icons (linkedin and github in this case).
   This page is responsive so it will have the same structure across different screen sizes and devices with
   with minor changes to font-size and positioning in order to maintain the desired design effect.
 
-  The content page structure holds the html structure for all other pages in the site. The first and last name are located to the top-right hand corner, will content starting on the intersection between both names.
+  The content page structure holds the html structure for all other pages in the site. The first and last name are located to the top-left hand corner, with content starting on the intersection between both names.
   Social links are also now located underneath the last name across the pages with content.
-  Content is very varied in this site. It ranges from a few p tages holding text to a list of articles in the blog to a projects page holding divs of images and text and links inside each div.
+  Content is very varied in this site. It ranges from a few p tags holding text to a list of articles in the blog to a projects page holding divs of images and text and links inside each div.
   These content pages are also responsive to different devices and screen-sizes and have the same desired design effect as the rest of the website.
 
 ## Sitemap
