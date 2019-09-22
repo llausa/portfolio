@@ -49,10 +49,23 @@
 
 ## Design Process (w/Screenshots)
   * Inspiration
+    - [Pinterest Website Inspiration Board](https://www.pinterest.com.au/santiagochamon/portfolio-inspiration/)
+    - [Alana Company Website](http://alanacompany.com/)
+    - [Dave Allie (.) com](https://daveallie.com/)
 
   * Sketches/Mockups
+    - [Index Desktop Sketch](docs/desktop_index_sketch.jpg)
+    - [Content Desktop Sketch](docs/desktop_content_sketch.jpg)
+    - [Index Mobile Sketch](docs/mobile_sketch.jpg)
+    - [Index Desktop Mockup](docs/desktop_mockup_final.png)
+    - [Content Desktop Mockup](docs/desktop_content_page_final.png)
+    - [Index Mobile Mockup](docs/mobile_mockup_final.png)
+    - [Content Mobile Mockup](docs/mobile_content_mockup_final.png)
 
   * End Result (responsiveness)
+    - [Mobile](docs/final_mobile.png)
+    - [Laptop](docs/final_laptop.jpg)
+    - [Dekstop](docs/final_desktop.jpg)
 
 ## Target audience
   The target audience for this website will be Employers looking to engage a Software developer for their services. It may also include recruiters, colleagues and others from the Tech Industry, looking to get more insight into the individual whose website this belongs to.
