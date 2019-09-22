@@ -59,8 +59,8 @@
 
 ## Tech stack
   This website was created with the following tools:
-    * HTML
-    * CSS
-    * SCSS
-    * [Font Awesome](https://fontawesome.com/)
-    * [Google Fonts](https://fonts.google.com/)
+      * HTML
+      * CSS
+      * SCSS
+      * [Font Awesome](https://fontawesome.com/)
+      * [Google Fonts](https://fonts.google.com/)
