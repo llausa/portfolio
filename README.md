@@ -68,7 +68,7 @@
   * End Result (responsiveness)
     - [Mobile](docs/final_mobile.png)
     - [Laptop](docs/final_laptop.jpg)
-    - [Dekstop](docs/final_desktop.jpg)
+    - [Desktop](docs/final_desktop.jpg)
 
 ## Target audience
   The target audience for this website will be Employers looking to engage a Software developer for their services. It may also include recruiters, colleagues and others from the Tech Industry, looking to get more insight into the individual whose website this belongs to.
