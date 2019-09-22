@@ -12,7 +12,7 @@
   https://github.com/llausa/portfolio
 
 ## Purpose
-  The purpose of this website is to showcase my abilities as a front-end developer to potential employers
+  The purpose of this website is to showcase my abilities as a Software Developer to potential employers
   and colleagues.
 
   This website acts as my personal page on the internet and shows who I am to the world so that anyone curious
