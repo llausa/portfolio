@@ -19,7 +19,11 @@
   to see what I'm about or wants to know who I am or what I have done can quickly find the information digitally.
 
 ## Functionality / features
+  This is a simple personal portfolio website with 5 html pages and 5 blog posts.
+
   This site has three main components: 1) the hamburger menu, 2) the index/splash page and 3) the content pages.
+
+  The Index page structure holds the html code for the Index page and the Content page structure holds the html code for all other pages (apart from index.html page).
 
   The hamburger menu appears on all pages of the site. It is a responsive, pure css solution, that lets users
   navigate between all the different pages in a seamless way. A user visiting the site will be taken to the
