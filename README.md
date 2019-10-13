@@ -7,6 +7,9 @@
   The site can be found here:
   https://llausa.github.io/portfolio/
 
+  The Rails webapp can be found here:
+  https://stormy-citadel-03592.herokuapp.com/
+
 ## Github Repo Link
   Here is the link to the repo:
   https://github.com/llausa/portfolio
